@@ -1,0 +1,29 @@
+#nav-bar{
+  /* border: 1px solid black; */
+  display: block;
+  background-color: lightblue;
+  /* position: fixed;  */
+}
+
+#nav-bar #nav-list{
+  display: inline;
+  list-style: none;
+  margin-left: 10%;
+}
+
+#nav-bar .nav-list-voice{
+  display: inline;
+  margin: auto;
+  margin-left: 10%;
+
+}
+
+#nav-bar .nav-list-voice.active{
+    font-weight: bold;
+}
+
+#nav-bar #nav-search{
+  display: inline;
+  position: relative;
+  right: 20px;
+}
