@@ -6,20 +6,82 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+    <!-- NAV BAR -->
     <div id="nav-bar">
-      <ul id="nav-list">
-        <li class="nav-list-voice active">Home</li>
-        <li class="nav-list-voice">About</li>
-        <li class="nav-list-voice">Projects</li>
-      </ul>
+      <div id="nav-body">
+        <ul id="nav-list">
+          <li class="nav-list-voice active">Home</li>
+          <li class="nav-list-voice">About</li>
+          <li class="nav-list-voice">Projects</li>
+        </ul>
 
-      <div id="nav-search">
-        <input type="text" name="website_search" placeholder="Search on website ...">
+        <div id="nav-search">
+          <input type="text" name="website_search" placeholder="Search on website ...">
+        </div>
       </div>
     </div>
 
+    <!-- PRESENTATION -->
+    <div id="presentation-container">
+      <div id="name-presentation">
+        <h2 id="name">Name Surname</h2>
+        <p id="presentation">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.<br>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur.<br>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
 
+    <!-- LAST PROJECTS -->
+    <div id="projects-container">
+      <h2 id="projects-container-title">Last Projects</h2>
+      <div id="grid-container">
+        <!-- PROJECTS CONTENT -->
+        <div class="col">
+          <a href="#"> <img src="assets/img/project.png" alt="project"> </a>
+          <h5 class="project-title">Project Title</h5>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+            <span class="description-more" style="text-align: right;"><a href="#">More ...</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <!-- EMAIL FORM -->
+    <div id="email-container">
+      <h3>Send me a Mail</h3>
+      <form id="mail-form" action="index.html" method="post">
+        <p>Name</p>
+        <input type="text" name="name" placeholder="Your Name">
 
+        <p>Surname</p>
+        <input type="text" name="surname" placeholder="Your Surname">
+
+        <p>E-mail</p>
+        <input type="email" name="email" placeholder="Your E-mail">
+
+        <p>Email Object</p>
+        <textarea name="email-textarea" rows="8" cols="80" placeholder="Insert email text ..."></textarea>
+        <br>
+        <input type="submit" name="submit-email" value="Send">
+        <input type="reset" name="reset-email-form" value="Reset All">
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer-container">
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>

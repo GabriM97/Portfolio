@@ -1,29 +1,96 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV-BAR */
 #nav-bar{
   /* border: 1px solid black; */
+  box-shadow: 0px 0px 20px 2px;
   display: block;
-  background-color: lightblue;
-  /* position: fixed;  */
+  background-color: #c76706;
+  padding-left: 10%;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  padding: 5px;
+}
+
+#nav-bar #nav-body{
+  margin-top: 10px;
 }
 
 #nav-bar #nav-list{
+  font-size: 1.5em;
   display: inline;
   list-style: none;
-  margin-left: 10%;
+  color: white;
 }
 
 #nav-bar .nav-list-voice{
   display: inline;
   margin: auto;
-  margin-left: 10%;
+  margin-left: 5%;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
 
+#nav-bar .nav-list-voice:hover{
+  border: 1px solid #f0750f;
+  background-color: #f0750f;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+#nav-bar .nav-list-voice:first-child{
+  margin-left: 0;
 }
 
 #nav-bar .nav-list-voice.active{
     font-weight: bold;
+    /* color: orange; */
 }
 
+/* NAV-BAR SEARCH */
 #nav-bar #nav-search{
   display: inline;
-  position: relative;
-  right: 20px;
+  position: absolute;
+  right: 10%;
+  /* border: 1px solid black; */
+  margin: 0;
+}
+
+#nav-bar #nav-search input[type=text]{
+  background-color: #c76706;
+  color: white;
+  font-size: 1.1em;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+#nav-bar #nav-search ::placeholder{
+  color: white;
+}
+
+/* PRESENTATION */
+#presentation-container{
+  font-size: 1.3em;
+  padding: 100px 0;
+  /* border: 1px solid black; */
+  background-color: #f0a150;
+}
+
+#presentation-container #name-presentation{
+  margin-left: 5%;
+  /* border: 1px solid black; */
+}
+
+#presentation-container #name-presentation #name{
+text-align: right;
+}
+
+#presentation-container #name-presentation #presentation{
+  margin-left: 40px;
 }
