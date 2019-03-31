@@ -1,6 +1,7 @@
 html, body{
   margin: 0;
   padding: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* NAV-BAR */
@@ -34,13 +35,15 @@ html, body{
   margin-left: 5%;
   /* border: 1px solid black; */
   cursor: pointer;
+  background-color: #c76706;
+  padding: 10px;
+  border-radius: 0px;
 }
 
 #nav-bar .nav-list-voice:hover{
-  border: 1px solid #f0750f;
   background-color: #f0750f;
-  padding: 3px;
-  border-radius: 5px;
+  padding: 15px 10px;
+  border-radius: 0px;
 }
 
 #nav-bar .nav-list-voice:first-child{
@@ -78,19 +81,39 @@ html, body{
 #presentation-container{
   font-size: 1.3em;
   padding: 100px 0;
-  /* border: 1px solid black; */
   background-color: #f0a150;
 }
 
 #presentation-container #name-presentation{
   margin-left: 5%;
-  /* border: 1px solid black; */
+  margin-right: 10%;
+  /* border: 1px solid red; */
 }
 
 #presentation-container #name-presentation #name{
-text-align: right;
+/* border: 1px solid black; */
 }
 
 #presentation-container #name-presentation #presentation{
   margin-left: 40px;
+  text-align: justify;
+}
+
+/* LAST PROJECTS */
+#projects-container #grid-container::after{
+  content: "";
+  clear: both;
+  display: block;
+  margin-bottom: 30px;
+}
+
+#projects-container .col{
+  width: 33.3%;
+  float: left;
+  /* border: 1px solid black; */
+}
+
+#projects-container #projects-container-title{
+  font-size: 1.5em;
+  margin-left: 5%;
 }
